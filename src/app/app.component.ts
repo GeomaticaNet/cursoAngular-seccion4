@@ -1,10 +1,14 @@
+// CLASE CON UN DECORADOR QUE DEFINE EL APP-ROOT, ESTE SERIA EL COMPONENTE PRINCIPAL DE LA APP DEL CUAL SE DESPRENDEN TODOS LOS DEMAS COMPONENTES.
+
 import { Component } from '@angular/core';
 
+// decorador
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+	selector: 'app-root',
+	templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'bases';
+
+	public title: string = 'Hola Componente root';
+
 }

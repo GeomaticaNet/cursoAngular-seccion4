@@ -1,0 +1,38 @@
+<h1>{{ name }}</h1>
+
+<dl>
+    <td>Nombre:</td>
+    <dd>{{ name }}</dd>
+
+    <td>Edad:</td>
+    <dd>{{ age }}</dd>
+
+    <td>Método:</td>
+    <!-- Producto del metodo o funcion getHeroDescription -->
+    <dd>{{ getHeroDescription() }}</dd>
+
+    <!--LLamamos al geter o metodo capitalizeName que pone primeras en mayusculas. -->
+    <td>capitalizado:</td>
+    <dd>{{ capitalizedName }}</dd>
+</dl>
+
+<!-- Si la propiedad name es igual al nombre que nosotros cambiamos mostramos el botón, si no lo es, lo ocultamos -->
+<button
+    *ngIf="name !== 'Spiderman'"
+    (click)="changeHero()"
+    class="btn btn-primary mx-2">
+    Cambiar Nombre
+</button>
+
+<button
+    *ngIf="age !=25"
+    (click)="changeAge()"
+    class="btn btn-primary mx-2">
+    Cambiar Edad
+</button>
+
+<button
+    (click)="resetForm()"
+    class="btn btn-primary mx-2">
+    Reset
+</button>
