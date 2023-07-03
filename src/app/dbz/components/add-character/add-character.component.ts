@@ -9,7 +9,7 @@ import { Character } from '../../interfaces/character.interface';
 export class AddCharacterComponent {
 
 
-    // Me da la capacidad de emitir el onNewCharacter al padre
+    // Me da la capacidad de emitir la propiedad(objeto) onNewCharacter al padre
     @Output()
     public onNewCharacter: EventEmitter<Character> = new EventEmitter();
 
