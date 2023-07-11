@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-	public title: string = 'Hola Componente root';
+	public title: string = '';
 
 }
